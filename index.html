@@ -1,0 +1,481 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>My Bootstrap Practice</title>
+</head>
+<body>
+   
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid header">
+      <display class="lead fw-bold gradient-text" style="letter-spacing: 2.5px;">May Khine Soe</display>
+      <button class="navbar-toggler white-icn" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="flase" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="main-nav">
+        <div style="width: 500px;" class="navbar-nav justify-content-around">
+
+          <a class="abutton nav-link active text-light  fs-5" aria-current="page" href="#intro">Home</a>
+          
+          <a class="abutton nav-link text-light fs-5" href="#about-me">About me</a>
+          <a class="abutton nav-link text-light fs-5" href="#projects">Projects</a>
+          <a class="abutton nav-link text-light fs-5" href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="rt-icon d-none d-md-block">
+        <a href="https://github.com/mks-mia">
+          <svg class="rtsvg" width="25px" height="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 432 416">
+              <path class="icon" d="M213.5 0q88.5 0 151 62.5T427 213q0 70-41 125.5T281 416q-14 2-14-11v-58q0-27-15-40q44-5 70.5-27t26.5-77q0-34-22-58q11-26-2-57q-18-5-58 22q-26-7-54-7t-53 7q-18-12-32.5-17.5T107 88h-6q-12 31-2 57q-22 24-22 58q0 55 27 77t70 27q-11 10-13 29q-42 18-62-18q-12-20-33-22q-2 0-4.5.5t-5 3.5t8.5 9q14 7 23 31q1 2 2 4.5t6.5 9.5t13 10.5T130 371t30-2v36q0 13-14 11q-64-22-105-77.5T0 213q0-88 62.5-150.5T213.5 0z"/>
+          </svg>
+        </a>
+        <a  href="https://www.linkedin.com/in/maykhinesoe/">
+          <svg class="rtsvg" xmlns="http://www.w3.org/2000/svg" width="21px" height="28px" viewBox="0 0 14 14">
+            <path class="icon" d="M3.574 1.767a1.316 1.316 0 0 1-1.287 1.326A1.346 1.346 0 0 1 .99 1.767A1.326 1.326 0 0 1 2.287.5a1.316 1.316 0 0 1 1.287 1.267M1.129 5.449c0-.762.485-.643 1.158-.643c.673 0 1.148-.119 1.148.643v7.424c0 .772-.485.614-1.148.614c-.663 0-1.158.158-1.158-.614zm4.306.001c0-.426.158-.585.405-.634c.248-.05 1.099 0 1.396 0c.297 0 .416.485.406.851a2.485 2.485 0 0 1 2.217-.99a2.97 2.97 0 0 1 3.148 3.098v5.068c0 .772-.475.614-1.149.614c-.673 0-1.148.158-1.148-.614V8.884A1.425 1.425 0 0 0 9.206 7.34A1.435 1.435 0 0 0 7.74 8.914v3.959c0 .772-.485.614-1.158.614c-.673 0-1.148.158-1.148-.614V5.449Z"/>
+          </svg>
+        </a>
+        <a href="https://line.me/ti/p/N4Ds-mhik-">
+          <svg class="rtsvg" width="24px" height="22px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="gradient" x1="0" y1="0%" x2="0%" y2="80%">
+                    <stop offset="0%" style="stop-color:#93EBFF; stop-opacity:1" />
+                    <stop offset="50%" style="stop-color:#FFD910; stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#FF4BA2; stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <path class="icon" d="M25.817 13.151a.842.842 0 1 1 0 1.683h-2.339v1.5h2.339a.84.84 0 1 1 0 1.678H22.64a.84.84 0 0 1-.837-.839v-6.36c0-.463.375-.843.837-.843h3.183a.842.842 0 0 1-.005 1.682h-2.339v1.5zm-5.134 4.021a.845.845 0 0 1-.844.838a.85.85 0 0 1-.683-.333l-3.255-4.427v3.921a.839.839 0 1 1-1.678 0v-6.36c0-.359.235-.681.573-.796a.754.754 0 0 1 .26-.043c.26 0 .5.141.661.339l3.281 4.437v-3.937c0-.463.375-.843.839-.843s.844.38.844.843zm-7.656 0a.843.843 0 0 1-.844.839a.84.84 0 0 1-.833-.839v-6.36c0-.463.375-.843.839-.843c.463 0 .839.38.839.843zm-3.287.839H6.557a.846.846 0 0 1-.844-.839v-6.36c0-.463.38-.843.844-.843s.839.38.839.843v5.521H9.74a.839.839 0 1 1 0 1.678zM32 13.749C32 6.588 24.817.76 16 .76S0 6.588 0 13.749c0 6.417 5.693 11.792 13.38 12.813c.521.109 1.229.344 1.412.787c.161.4.104 1.02.052 1.443l-.219 1.359c-.063.401-.323 1.579 1.396.86c1.724-.719 9.224-5.437 12.583-9.303C30.901 19.193 32 16.609 32 13.749z"/>
+          </svg>
+        </a>
+        <a href="mailto:maykhine.mks@gmail.com">
+          <svg class="rtsvg" xmlns="http://www.w3.org/2000/svg" width="26px" height="24px" viewBox="0 0 24 24">
+            <path class="icon" d="M20 18h-2V9.25L12 13L6 9.25V18H4V6h1.2l6.8 4.25L18.8 6H20m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"/>
+          </svg>
+        </a> 
+        <a href="tel:+66642855441">
+          <svg class="rtsvg" xmlns="http://www.w3.org/2000/svg" width="20px" height="18px" viewBox="0 0 26 26">
+            <path class="icon" d="M22.386 18.026c-1.548-1.324-3.119-2.126-4.648-.804l-.913.799c-.668.58-1.91 3.29-6.712-2.234c-4.801-5.517-1.944-6.376-1.275-6.951l.918-.8c1.521-1.325.947-2.993-.15-4.71l-.662-1.04C7.842.573 6.642-.552 5.117.771l-.824.72c-.674.491-2.558 2.087-3.015 5.119c-.55 3.638 1.185 7.804 5.16 12.375c3.97 4.573 7.857 6.87 11.539 6.83c3.06-.033 4.908-1.675 5.486-2.272l.827-.721c1.521-1.322.576-2.668-.973-3.995l-.931-.801z"/>
+          </svg>  
+        </a> 
+      </div>
+    </div>
+  </nav>
+
+  <section id="intro" class="px-4 mt-3">
+    <div class="container-mid">
+      <div class="row justify-content-center align-items-center" style="height: 100%;">
+        <div class="col-md-6">
+          <h2 class="gradient_text fw-bold gradient-text" style="letter-spacing: 4px;">Introduction</h2>
+          <p class="fs-4 text-secondary">This is Mia, Information & Communication Technology(ICT) student, specializes in <span class="gradient-text fs-4">Front-end development </span> with a strong interest in <span class="gradient-text fs-4">web and mobile application development</span>, as well as <span class="gradient-text fs-4">artificial intelligence</span>.</p>
+          <button class="contact-button"><a style="color: black; text-decoration: none;" href="#contact">Contact me</a></button>
+        </div>
+        <div class="col-10 col-md-4 image">
+            <img class="img-fluid img-thumbnail" src="profile_redorg.png" alt="picture">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <div><br></div>
+
+  <section id="about-me" class="mt-5 px-5 d-sm-px-1">
+    <div class="line-header">
+      <h2 class="gradient-text fw-bold mx-3">Get To Know Me</h2>
+    </div>
+    <div>
+      <p id="about_me_text" class="text-secondary fs-4">A passionate web developer and mobile app developer dedicated to creating intuitive, responsive, and high-performance digital solutions. As an undergraduate student at Rangsit University majoring in ICT, I combine a strong foundation in both front-end and back-end development with hands-on project experience to build seamless applications that provide exceptional user experiences. I'm committed to continuous learning and leveraging the latest technologies to drive user engagement and satisfaction.</p>
+      <h4 class="gradient_text fw-bold gradient-text mt-4" style="letter-spacing: 4px;">Education</h4>
+    </div>
+    <div class="school-info mt-4 d-md-block d-none">
+      <div class="year_icon">
+        <div id="years_txt"  class="text-secondary fw-bold" >2016</div>
+        <div class="circle_icon"></div>
+      </div>
+      <div class="uni_box">
+          <div class="vertical_line"></div>
+          <div id="uni_info">
+              <p class="text-secondary fs-5"><span class="fs-4 fw-bold">University of Dental Medicine Yangon Myanmar</span> <br>studied Bachelor in dental science(BSc)  till 4th year BDS untill covid broke out in Myanmar, 23rd March 2020</p>
+          </div>
+      </div>
+      <div class="year_icon">
+          <div id="years_txt" class="text-secondary fw-bold">2020</div>
+          <div class="circle_icon"></div>
+      </div>
+      <div class="year_icon">
+          <div id="years_txt"  class="text-secondary fw-bold" >2022</div>
+          <div class="circle_icon"></div>
+      </div>
+      <div class="uni_box">
+          <div class="vertical_line"></div>
+          <div id="uni_info">
+              <p class="text-secondary fs-5"><span class="fs-4 fw-bold">Rangsit University International College (RIC) Thailand</span><br>pursuing a Bachelor's Degree in Information & Communication Technology at Rangsit International College (RIC). My studies focus on the latest technologies and development practices, providing me with a solid foundation and hands-on experience in the field. </p>
+          </div>
+      </div>
+      <div class="year_icon">
+          <div id="years_txt"  class="text-secondary fw-bold" >2026</div>
+          <div class="circle_icon"></div>
+      </div>
+    </div> 
+    <div class="school-info-mobile d-md-none">
+      <div class="row ">
+        <div class="col-12 ">
+          <div class="mobile-yr d-flex align-items-center">
+            <div class="circle_icon"></div>
+            <div class="ms-3 fs-5 gradient-text text-secondary">2016 - 2020</div>
+          </div>
+          <p class="text-secondary fs-6"><span class="fs-5 fw-bold">University of Dental Medicine Yangon Myanmar</span> <br>studied Bachelor in dental science(BSc)  till 4th year BDS untill covid broke out in Myanmar, 23rd March 2020</p> 
+        
+          <div class="mobile-yr d-flex align-items-center">
+            <div class="circle_icon"></div>
+            <div class="ms-3 fs-5 gradient-text text-secondary">2022 - 2026</div>
+          </div>
+          <p class="text-secondary fs-6"><span class="fs-5 fw-bold">Rangsit University International College (RIC) Thailand</span><br>pursuing a Bachelor's Degree in Information & Communication Technology at Rangsit International College (RIC). My studies focus on the latest technologies and development practices, providing me with a solid foundation and hands-on experience in the field. </p>
+        </div>
+      </div>
+    </div>  
+    <div class="container-mid">
+      <h4 class="gradient-text mt-4 mb-4 fw-bold" style="letter-spacing: 3px; ">Skills</h4>
+      <div class="row">
+        <div class="d-block d-md-flex ">
+          <div class="skills_icon">
+              <img alt="html" src="icons/html.svg" height="24" width="24">
+              <div style="margin-left: 10px;">HTML</div>
+          </div>
+          <div class="skills_icon">
+              <img alt="css" src="icons/css3.svg" height="24" width="24">
+              <div style="margin-left: 10px;">CSS</div>
+          </div>
+          <div class="skills_icon">
+            <img alt="bootstrap" src="icons/bootstrap.svg" height="24" width="24">
+            <div style="margin-left: 10px;">Bootstrap</div>
+          </div>
+          <div class="skills_icon">
+              <img alt="javascript" src="icons/javascript.svg" height="24" width="24">
+              <div style="margin-left: 10px;">JavaScript</div>
+          </div>
+          <div class="skills_icon">
+              <img alt="python" src="icons/python.svg" height="24" width="24">
+              <div style="margin-left: 10px;">Python</div>
+          </div>
+          <div class="skills_icon">
+              <img alt="java" src="icons/java.svg" height="24" width="24">
+              <div style="margin-left: 10px;">Java</div>
+          </div>
+          <div class="skills_icon">
+              <img alt="flutter" src="icons/flutter.svg" height="24" width="24">
+              <div style="margin-left: 10px;">Flutter</div>
+          </div>
+        </div>
+      </div>
+      <h4 class="gradient-text mt-4 mb-4 fw-bold" style="letter-spacing: 3px;">Additional Skills</h4>
+      <div class="row">
+        <div class="d-block d-md-flex ">
+          <div class="skills_icon">
+              <img alt="microsoft word" src="icons/word.svg" height="24" width="24">
+              <div style="margin-left: 10px; line-height: 15px;">Microsoft word</div>
+          </div>
+          <div class="skills_icon">
+              <img alt="microsoft excel" src="icons/excel.svg" height="24" width="24">
+              <div style="margin-left: 10px; line-height: 15px;">Microsoft excel</div>
+          </div>
+          <div class="skills_icon">
+              <img alt="microsoft powerpoint" src="icons/powerpoint.svg" height="24" width="24">
+              <div style="margin-left: 10px; line-height: 15px;">Microsoft powerpoint</div>
+          </div>
+          <div class="skills_icon">
+              <img alt="canva" src="icons/canva.svg" height="24" width="24">
+              <div style="margin-left: 10px;">Canva</div>
+          </div>
+          <div class="skills_icon">
+              <img alt="figma" src="icons/figma.svg" height="24" width="24">
+              <div style="margin-left: 10px;">Figma</div>
+          </div>
+        </div>
+      </div> 
+    </div> 
+    <div class="container-mid">
+      <h4 class="gradient-text mt-4 mb-4 fw-bold" style="letter-spacing: 3px;">Languages</h4>
+      <div class="row ">
+        <div class="container d-flex align-items-center ">
+          <div class="col-2 col-md-1 language-text">Burmese</div>
+          <div class="col-3 p-0">
+            <div class="progress-container">
+              <div class="progress-bar" id="progressBarB"></div>
+            </div>
+          </div>
+          <div class="col-2 language-text ps-3">Native</div>
+        </div>
+        <div class="container d-flex align-items-center ">
+          <div class="col-2 col-md-1 language-text">English</div>
+          <div class="col-3">
+            <div class="progress-container">
+              <div class="progress-bar" id="progressBarE"></div>
+            </div>
+          </div>
+          <div class="col-2 language-text ps-3">Fluent</div>
+        </div>
+        <div class="container d-flex align-items-center ">
+          <div class="col-2 col-md-1 language-text">Chinese</div>
+          <div class="col-3 p-0">
+            <div class="progress-container">
+              <div class="progress-bar" id="progressBarC"></div>
+            </div>
+          </div>
+          <div class="col-2 language-text ps-3">Intermediate</div>
+        </div>
+        <div class="container d-flex align-items-center ">
+          <div class="col-2 col-md-1 language-text">Thai</div>
+          <div class="col-3 ">
+            <div class="progress-container">
+              <div class="progress-bar" id="progressBarT"></div>
+            </div>
+          </div>
+          <div class="col-2 language-text ps-3">Beginner</div>
+        </div>
+      </div>
+    </div>   
+  </section>
+
+  <section id="projects" class="mt-5 pt-4 pb-3 d-sm-px-1">
+    <div class="line-header mt-5 pb-4">
+      <!-- <span class="gradient-line"></span> -->
+      <h2 class="gradient-text fw-bold mx-3">Recent Projects & Related Links</h2>
+      <!-- <span class="gradient-line"></span> -->
+    </div>
+
+    <div class="container">
+      <div class="row d-flex justify-content-around">
+        <div class="col-md-5 outborder">
+          <div id="heathplus" class="carousel slide mb-3">
+            <div class="carousel-indicators mb-0 mt-3 ">
+              <button style="height: 5px;" type="button" data-bs-target="#heathplus" data-bs-slide-to="0" class="active bg-dark" aria-current="true" aria-label="Slide 1"></button>
+              <button style="height: 5px;" type="button" data-bs-target="#heathplus" data-bs-slide-to="1" class="bg-dark" aria-label="Slide 2"></button>
+              <button style="height: 5px;" type="button" data-bs-target="#heathplus" data-bs-slide-to="2" class="bg-dark" aria-label="Slide 3"></button>
+              <button style="height: 5px;" type="button" data-bs-target="#heathplus" data-bs-slide-to="3" class="bg-dark" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="projects/HealthPlus/chatbox.png" class="d-block w-100" alt="chatbox">
+              </div>
+              <div class="carousel-item">
+                <img src="projects/HealthPlus/home.png" class="d-block w-100" alt="home page">
+              </div>
+              <div class="carousel-item">
+                <img src="projects/HealthPlus/about.png" class="d-block w-100" alt="about page">
+              </div>
+              <div class="carousel-item">
+                <img src="projects/HealthPlus/howto.png" class="d-block w-100" alt="how to page">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heathplus" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heathplus" data-bs-slide="next">
+              <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+            </button>
+          </div>
+          <p>"Health Plus", an AI chat box webpage which is an interactive customer support tool to help the users to know more about the university clinic in a convenient way via online. Click <a href="https://mks-mia.github.io/healthweb/">Here</a> to visit "Health Plus"<br><br>HTML, CSS, JavaScript</p>
+        </div>
+
+        <div class="d-block d-md-none py-2"><br></div>
+
+        <div class="col-md-5 outborder">
+          <div id="capsulecaper" class="carousel slide mb-3">
+            <div class="carousel-indicators mb-0 mt-3 ">
+              <button style="height: 5px;" type="button" data-bs-target="#capsulecaper" data-bs-slide-to="0" class="active bg-light" aria-current="true" aria-label="Slide 1"></button>
+              <button style="height: 5px;" type="button" data-bs-target="#capsulecaper" data-bs-slide-to="1" class="bg-light" aria-label="Slide 2"></button>
+              <button style="height: 5px;" type="button" data-bs-target="#capsulecaper" data-bs-slide-to="2" class="bg-light" aria-label="Slide 3"></button>
+              <button style="height: 5px;" type="button" data-bs-target="#capsulecaper" data-bs-slide-to="3" class="bg-light" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="projects/CapsuleCaper/CC_cover.png" class="d-block w-100" alt="chatbox">
+              </div>
+              <div class="carousel-item">
+                <img src="projects/CapsuleCaper/start.png" class="d-block w-100" alt="home page">
+              </div>
+              <div class="carousel-item">
+                <img src="projects/CapsuleCaper/lvl5.png" class="d-block w-100" alt="about page">
+              </div>
+              <div class="carousel-item">
+                <img src="projects/CapsuleCaper/lvl5round.png" class="d-block w-100" alt="how to page">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#capsulecaper" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#capsulecaper" data-bs-slide="next">
+              <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+            </button>
+          </div>
+          <p>me and a friend from RIC created this "Wild West Adventure" game in which the main character has to wonder around the map and save her own pet. Click <a href="https://youtu.be/UuhYtcjnanA?si=Y9D-Y3LtWxsaXfYh">Here</a> is the complete explaination of the game.<br><br>Unity C#</p>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-around mt-5 pb-5">
+        <div class="col-md-5 outborder">
+          <div id="wildwest" class="carousel slide mb-3">
+            <div class="carousel-indicators mb-0 mt-3 ">
+              <button style="height: 5px;" type="button" data-bs-target="#wildwest" data-bs-slide-to="0" class="active bg-light" aria-label="Slide 1"></button>
+              <button style="height: 5px;" type="button" data-bs-target="#wildwest" data-bs-slide-to="1" class="bg-light" aria-label="Slide 2"></button>
+              <button style="height: 5px;" type="button" data-bs-target="#wildwest" data-bs-slide-to="2" class="bg-light" aria-label="Slide 3"></button>
+              <button style="height: 5px;" type="button" data-bs-target="#wildwest" data-bs-slide-to="3" class="bg-light" aria-label="Slide 4"></button>
+              <button style="height: 5px;" type="button" data-bs-target="#wildwest" data-bs-slide-to="4" class="bg-light" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="projects/WildWestAdventure/dungeon.png" class="d-block w-100" alt="about page">
+              </div>
+              <div class="carousel-item">
+                <img src="projects/WildWestAdventure/cvr.png" class="d-block w-100" alt="chatbox">
+              </div>
+              <div class="carousel-item">
+                <img src="projects/WildWestAdventure/story.png" class="d-block w-100" alt="home page">
+              </div>
+              <div class="carousel-item">
+                <img src="projects/WildWestAdventure/snow.png" class="d-block w-100" alt="how to page">
+              </div>
+              <div class="carousel-item">
+                <img src="projects/WildWestAdventure/final.png" class="d-block w-100" alt="how to page">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#wildwest" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#wildwest" data-bs-slide="next">
+              <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+            </button>
+          </div>
+          <p>me and a friend from RIC created this "Wild West Adventure" game in which the main character has to wonder around the map and save her own pet. Click <a href="https://youtu.be/UuhYtcjnanA?si=Y9D-Y3LtWxsaXfYh">Here</a> is the complete explaination of the game.<br><br>Unity C#</p>
+        </div>
+
+        <div class="d-block d-md-none py-2"><br></div>
+
+        <div class="col-md-5 outborder">
+          <div id="flutter" class="carousel slide mb-3">
+            <div class="carousel-indicators mb-0 mt-3 ">
+              <button style="height: 5px;" type="button" data-bs-target="#flutter" data-bs-slide-to="0" class="active bg-light" aria-current="true" aria-label="Slide 1"></button>
+              <button style="height: 5px;" type="button" data-bs-target="#flutter" data-bs-slide-to="1" class="bg-light" aria-label="Slide 2"></button>
+              <button style="height: 5px;" type="button" data-bs-target="#flutter" data-bs-slide-to="2" class="bg-light" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="projects/Flutter/weather.png" class="d-block w-100" alt="chatbox">
+              </div>
+              <div class="carousel-item">
+                <img src="projects/Flutter/worldtime.png" class="d-block w-100" alt="home page">
+              </div>
+              <div class="carousel-item">
+                <img src="projects/Flutter/calculator.png" class="d-block w-100" alt="about page">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#flutter" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#flutter" data-bs-slide="next">
+              <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+            </button>
+          </div>
+          <p style="margin-top: 5px;">With Flutter, I am beginning my journey with mini-projects as stepping stones towards more advanced development. So far, I have created a weather forecast app for a school project, along with creating a world time mobile application and a calculator app."<br><br>Flutter</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="mt-5">
+    <div class="line-header mt-5">
+      <h2 class="gradient-text fw-bold mt-3">Get In Touch</h2>
+    </div>
+    <div class="row px-3 row-gap-5 justify-content-around">
+      <div class="d-none d-md-flex col-md-4 justify-content-center align-items-center">
+        <div class="border border-secondary border-opacity-20 p-5 rounded-5 " >
+          <div class="contact_box">
+            <a  href="https://github.com/mks-mia">
+                <svg class="me-2" width="25px" height="26px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 432 416">
+                    <path class="icon" d="M213.5 0q88.5 0 151 62.5T427 213q0 70-41 125.5T281 416q-14 2-14-11v-58q0-27-15-40q44-5 70.5-27t26.5-77q0-34-22-58q11-26-2-57q-18-5-58 22q-26-7-54-7t-53 7q-18-12-32.5-17.5T107 88h-6q-12 31-2 57q-22 24-22 58q0 55 27 77t70 27q-11 10-13 29q-42 18-62-18q-12-20-33-22q-2 0-4.5.5t-5 3.5t8.5 9q14 7 23 31q1 2 2 4.5t6.5 9.5t13 10.5T130 371t30-2v36q0 13-14 11q-64-22-105-77.5T0 213q0-88 62.5-150.5T213.5 0z"/>
+                </svg>mks-mia
+            </a> 
+          </div> 
+          <div class="contact_box">
+              <a href="https://www.linkedin.com/in/maykhinesoe/">
+                  <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="21px" height="28px" viewBox="0 0 14 14">
+                      <path class="icon" d="M3.574 1.767a1.316 1.316 0 0 1-1.287 1.326A1.346 1.346 0 0 1 .99 1.767A1.326 1.326 0 0 1 2.287.5a1.316 1.316 0 0 1 1.287 1.267M1.129 5.449c0-.762.485-.643 1.158-.643c.673 0 1.148-.119 1.148.643v7.424c0 .772-.485.614-1.148.614c-.663 0-1.158.158-1.158-.614zm4.306.001c0-.426.158-.585.405-.634c.248-.05 1.099 0 1.396 0c.297 0 .416.485.406.851a2.485 2.485 0 0 1 2.217-.99a2.97 2.97 0 0 1 3.148 3.098v5.068c0 .772-.475.614-1.149.614c-.673 0-1.148.158-1.148-.614V8.884A1.425 1.425 0 0 0 9.206 7.34A1.435 1.435 0 0 0 7.74 8.914v3.959c0 .772-.485.614-1.158.614c-.673 0-1.148.158-1.148-.614V5.449Z"/>
+                  </svg>May Khine Soe
+              </a>
+          </div>
+          <div class="contact_box">
+            <a href="https://line.me/ti/p/N4Ds-mhik-">
+                <div class="textsvg"><svg class="me-2" width="24px" height="22px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path class="icon"  d="M25.817 13.151a.842.842 0 1 1 0 1.683h-2.339v1.5h2.339a.84.84 0 1 1 0 1.678H22.64a.84.84 0 0 1-.837-.839v-6.36c0-.463.375-.843.837-.843h3.183a.842.842 0 0 1-.005 1.682h-2.339v1.5zm-5.134 4.021a.845.845 0 0 1-.844.838a.85.85 0 0 1-.683-.333l-3.255-4.427v3.921a.839.839 0 1 1-1.678 0v-6.36c0-.359.235-.681.573-.796a.754.754 0 0 1 .26-.043c.26 0 .5.141.661.339l3.281 4.437v-3.937c0-.463.375-.843.839-.843s.844.38.844.843zm-7.656 0a.843.843 0 0 1-.844.839a.84.84 0 0 1-.833-.839v-6.36c0-.463.375-.843.839-.843c.463 0 .839.38.839.843zm-3.287.839H6.557a.846.846 0 0 1-.844-.839v-6.36c0-.463.38-.843.844-.843s.839.38.839.843v5.521H9.74a.839.839 0 1 1 0 1.678zM32 13.749C32 6.588 24.817.76 16 .76S0 6.588 0 13.749c0 6.417 5.693 11.792 13.38 12.813c.521.109 1.229.344 1.412.787c.161.4.104 1.02.052 1.443l-.219 1.359c-.063.401-.323 1.579 1.396.86c1.724-.719 9.224-5.437 12.583-9.303C30.901 19.193 32 16.609 32 13.749z"/>
+                </svg><span>id-maykhinesoe</span></div>
+            </a>
+          </div> 
+          <div class="contact_box">
+            <a href="tel:+66642855441">
+              <div class="textsvg"><svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="20px" height="18px" viewBox="0 0 26 26">
+                    <path class="icon" d="M22.386 18.026c-1.548-1.324-3.119-2.126-4.648-.804l-.913.799c-.668.58-1.91 3.29-6.712-2.234c-4.801-5.517-1.944-6.376-1.275-6.951l.918-.8c1.521-1.325.947-2.993-.15-4.71l-.662-1.04C7.842.573 6.642-.552 5.117.771l-.824.72c-.674.491-2.558 2.087-3.015 5.119c-.55 3.638 1.185 7.804 5.16 12.375c3.97 4.573 7.857 6.87 11.539 6.83c3.06-.033 4.908-1.675 5.486-2.272l.827-.721c1.521-1.322.576-2.668-.973-3.995l-.931-.801z"/>
+                </svg>+66 642 855 441
+              </div> 
+            </a>
+          </div> 
+        </div>
+      </div>
+
+      <div class=" d-block d-md-none col-md-4 d-flex justify-content-center align-items-center ">
+        <div class="border border-secondary border-opacity-20 p-5 rounded-5 " >
+          <div class="contact_box">
+            <a  href="https://github.com/mks-mia">
+              <i class="bi bi-github pe-2"></i>mks-mia
+            </a> 
+          </div> 
+          <div class="contact_box">
+            <a href="https://www.linkedin.com/in/maykhinesoe/">
+              <i class="bi bi-linkedin pe-2"></i>May Khine Soe
+            </a> 
+          </div>
+          <div class="contact_box">
+            <a href="https://line.me/ti/p/N4Ds-mhik-">
+              <i class="bi bi-line pe-2"></i>id-maykhinesoe
+            </a> 
+          </div>
+          <div class="contact_box">
+            <a href="tel:+66642855441">
+              <i class="bi bi-telephone pe-2"></i>+66 642 855 441
+            </a> 
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-5">
+        <div class="text-center"><span class="fs-5 text-secondary">Please feel free to fill out the form below to contact me for further inquiries.</span></div>
+        <form method="post" action="mail.php">  
+          <label for="name" class="form-label fs-5 text-secondary mt-3">Name:</label>
+          <div class="input-group">
+              <span class="input-group-text"><i class="bi bi-person"></i></span>
+              <input id="name" name="name" type="text" class="form-control" placeholder="Your name" required>
+          </div>
+          <label for="email" class="form-label fs-5 text-secondary mt-3">Email address:</label>
+          <div class="input-group">
+              <span class="input-group-text"><i class="bi bi-envelope-at-fill"></i></span>
+              <input id="email" name="email" type="email" class="form-control" placeholder="yourname@gmail.com" required>
+          </div>
+          <label for="message" class="form-label fs-5 text-secondary mt-3">Message:</label>
+          <div class="form-floating">
+              <textarea id="message" name="message" style="color:black; width: 100%; border-radius: 8px; padding-left:10px; height: 100px;" placeholder="Your message here..." required></textarea>
+          </div>
+          <div class="text-center mt-4">
+              <button id="submit-button" type="submit" class="contact-button px-2 py-1 fw-normal" style="border-radius: 10px; font-size: 18px;">Submit</button>
+          </div>
+      </form>        
+      </div>
+    </div>
+  </section>
+
+  <section id="footer" class="mt-5">
+    <footer class="text-center fs-6 text-secondary" style="letter-spacing: 8px;"><span class="fs-5">Thank You</span><br> &copy;May Khine Soe (Mia)</footer>
+  </section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</body>
+</html>
