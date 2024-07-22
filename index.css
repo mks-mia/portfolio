@@ -62,11 +62,11 @@ body{
     border: 0.1px dotted lightgray;
     border-radius: 4px;
 }
-#about-me h2, #projects h2, #contact h2{
+#about-me h3, #projects h3, #contact h3{
     position: relative;
     padding-bottom: 10px;
 }
-#about-me h2::after, #projects h2::after, #contact h2::after{
+#about-me h3::after, #projects h3::after, #contact h3::after{
     content: '';
     position: absolute;
     width: 80%;
