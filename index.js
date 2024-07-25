@@ -90,14 +90,23 @@ function updateProgressBarT(){
 }
 updateProgressBarT();
 
-// document.querySelector('#submit-button').addEventListener('click',()=>{
-//     remove();
-// })
-// function remove(){
-//     document.getElementById('name').value='';
-//     document.getElementById('email').value='';
-//     document.getElementById('message').value='';
-//     alert('Submitted successfully!!!')
-// }
+function remove(){
+    document.getElementById('name').value='';
+    document.getElementById('email').value='';
+    document.getElementById('message').value='';
+}
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxe1sAdtX9XlbvSeGr4lVdGHtrx_K-1ZpfVy5y2nMcyiwcR288cMutnPAEWISKFARUCWw/exec'
+
+const form = document.forms['contact-form']
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => alert("Thank you! Your inquiry is submitted successfully." ))
+  .then(() => { window.location.reload(); })
+  .catch(error => console.error('Error!', error.message))
+  remove()
+})
 
 
