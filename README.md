@@ -1,6 +1,17 @@
-# Personal Portfolio Website
+# Personal Portfolio Website (Modified Version)
 
 This is my personal portfolio website, built from scratch using **HTML**, **CSS**, **JavaScript**, and **Bootstrap**. It serves as a digital showcase of who I am, what I do, and the skills I've developed.
+
+## What’s New in This Version
+
+This “modified” portfolio builds on the original static site by introducing:
+
+1. **Enhanced Tech Stack** – Integrated JavaScript (ES6+), Bootstrap 5, and organized assets (`vendor`, `icons`).
+2. **Modern Layout** – Clean, multi-section design: About, Education, Skills, Projects, Contact.
+3. **Interactive UI** – Bootstrap components and JS-based navigation for a smoother user experience.
+4. **Better Asset Management** – Structured directories and scalable layout ideal for future updates.
+
+Aimed to transform a simple showcase into a polished, maintainable, and interactive developer portfolio.
 
 ## About
 
