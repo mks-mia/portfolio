@@ -248,7 +248,7 @@ body{
     color: #6c757d;
     font-size: large;
 }
-.outborder p a{
+.outborder p a, .article{
     color: white;
     text-decoration: underline;
     letter-spacing: 2px;
