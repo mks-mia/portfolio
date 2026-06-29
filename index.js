@@ -96,17 +96,22 @@ function remove(){
     document.getElementById('message').value='';
 }
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxe1sAdtX9XlbvSeGr4lVdGHtrx_K-1ZpfVy5y2nMcyiwcR288cMutnPAEWISKFARUCWw/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxmzYTA7ERIM5xstzl8QSDqrVxBe2mn5TdZAEwFTSijMqdMvUejJB2sJXEdNpCJPEh7/exec'
 
 const form = document.forms['contact-form']
 
 form.addEventListener('submit', e => {
   e.preventDefault()
+//   alert("Submitting... please wait ⏳")
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-  .then(response => alert("Thank you! Your inquiry is submitted successfully." ))
-  .then(() => { window.location.reload(); })
-  .catch(error => console.error('Error!', error.message))
-  remove()
+  .then(response => {
+    alert("Thank you! Your inquiry is submitted successfully." )
+    remove()
+    })
+    .then(() => { 
+        window.location.reload(); 
+    })
+    .catch(error => console.error('Error!', error.message))  
 })
 
 
